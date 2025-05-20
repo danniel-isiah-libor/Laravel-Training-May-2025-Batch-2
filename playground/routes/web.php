@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\UserController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -26,10 +28,9 @@ Route::fallback(function () {
     return "<h1> Page Not Found </h1>";
 });
 
-Route::get('/users/show/{id?}', function ($id = null) {
-    // perform query.....
-    return "User ID: $id";
-});
+Route::get('/users/show/{id?}', [UserController::class, 'show']);
+
+Route::get('/register', [UserController::class, 'register']);
 
 /**
  * PascalCase: Used for class names
