@@ -20,4 +20,14 @@ class UserController extends Controller
 
         return view('register');
     }
+
+public function login(Request $request)
+    {
+        // dump();
+        // dd($request->name);
+        // dd($request->date('birthdate'));
+
+        return view('login');
+    }
+
 }
