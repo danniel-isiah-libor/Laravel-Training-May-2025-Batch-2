@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Profile;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rules\Password;
 
@@ -61,8 +62,47 @@ class UserController extends Controller
             ],
         ]);
 
-        dd($request->email);
+        Profile::create([
+            'user_id' => 1,
+            'address' => fake()->address(),
+            'phone' => fake()->phoneNumber(),
+            'is_active' => fake()->boolean(),
+        ]);
 
-        // saving...
+        Profile::where('id', '=', 1)->update([
+            'address' => fake()->address(),
+        ]);
+
+        Profile::where('id', '=', 1)->delete();
+
+        Profile::where('id', '=', 1)->first();
+
+        return redirect()->route('login');
+
+        // Profile::insert([
+        //     [
+        //         'user_id' => 1,
+        //         'address' => $request->address,
+        //         'phone' => $request->phone,
+        //         'is_active' => $request->is_active,
+        //         'created_at' => now(),
+        //         'updated_at' => now(),
+        //     ],
+        //     [
+        //         'user_id' => 2,
+        //         'address' => $request->address,
+        //         'phone' => $request->phone,
+        //         'is_active' => $request->is_active,
+        //         'created_at' => now(),
+        //         'updated_at' => now(),
+        //     ]
+        // ]);
+
+        // $profile = new Profile();
+        // $profile->user_id = 1;
+        // $profile->address = $request->address;
+        // $profile->phone = $request->phone;
+        // $profile->is_active = $request->is_active;
+        // $profile->save();
     }
 }
