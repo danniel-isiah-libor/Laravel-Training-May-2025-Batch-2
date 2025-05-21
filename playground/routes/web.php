@@ -60,7 +60,6 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/users/show/{id?}', [UserController::class, 'show']);
 
 Route::get('/register', [UserController::class, 'register']);
-Route::get('/login', [UserController::class, 'login']);
 
 /**
  * PascalCase: Used for class names

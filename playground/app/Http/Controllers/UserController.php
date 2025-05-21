@@ -21,6 +21,7 @@ class UserController extends Controller
         return view('register');
     }
 
+<<<<<<< HEAD
 public function login(Request $request)
     {
         // dump();
@@ -30,4 +31,15 @@ public function login(Request $request)
         return view('login');
     }
 
+=======
+    public function login()
+    {
+        return view('login');
+    }
+
+    public function profile()
+    {
+        return view('profile');
+    }
+>>>>>>> 528f3cea34a75fe82971cdf97167c42b22c59127
 }
