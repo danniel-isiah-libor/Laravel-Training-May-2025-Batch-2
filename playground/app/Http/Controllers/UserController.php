@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+<<<<<<< Updated upstream
     public function show($id = null)
     {
         // perform query.....
@@ -18,4 +19,7 @@ class UserController extends Controller
         // dd($request->name);
         dd($request->date('birthdate'));
     }
+=======
+    //
+>>>>>>> Stashed changes
 }

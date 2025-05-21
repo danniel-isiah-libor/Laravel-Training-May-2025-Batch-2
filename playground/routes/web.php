@@ -8,6 +8,7 @@ Route::get('/', function () {
     // logic here...
     return view('welcome');
 });
+<<<<<<< Updated upstream
 // shortcut...
 // Route::view('/', 'welcome');
 
@@ -45,6 +46,20 @@ Route::get('/register', [UserController::class, 'register']);
 // $isEmployed = true; // boolean
 
 // $hobbies = ["reading", "traveling", "coding", 30, true]; // array
+=======
+
+
+Route::get('/hello', function () {
+ return 'Hello Wordl!';
+});
+
+
+// $firstName = "John"; //String
+// $age = 30; //integer
+// $height = 5.9; //float
+// $isEmployed = true; //boolean
+// $hobbies = ["reading", "traveling", "coding", 30,true]; //array
+>>>>>>> Stashed changes
 // $cars = [
 //     [
 //         'honda'
@@ -53,6 +68,7 @@ Route::get('/register', [UserController::class, 'register']);
 //         'toyota'
 //     ]
 // ];
+<<<<<<< Updated upstream
 // $profile = [
 //     'firstName' => 'John',
 //     'lastName' => 'Doe',
@@ -84,3 +100,21 @@ Route::get('/register', [UserController::class, 'register']);
 //         (new Actions())->save();
 //     }
 // }
+=======
+
+// $profile = [
+//     'firstName' => 'John',
+//     'lastName' => 'Doe'
+// ];
+
+// $profile = (object) [
+//     'firstName' => 'John',
+//     'lastname' => 'Doe'
+// ];
+
+// $address = null;
+// $address = ''; //string but empty
+
+// $address = null;
+// $address = [];
+>>>>>>> Stashed changes
