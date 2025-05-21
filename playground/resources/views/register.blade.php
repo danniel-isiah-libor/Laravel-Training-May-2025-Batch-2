@@ -16,7 +16,9 @@
   </div>
 
   <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-    <form class="space-y-6" action="#" method="POST">
+    <form class="space-y-6" action="{{ route('register.store') }}" method="POST">
+        @csrf
+
         <div>
             <x-field type="text" name="name" label="Name"/>
         </div>
@@ -26,11 +28,11 @@
       </div>
 
       <div>
-          <x-field type="password" name="password" label="Password"/>
+          <x-field type="text" name="password" label="Password"/>
       </div>
 
       <div>
-          <x-field type="password" name="password_confirmation" label="Password Confirmation"/>
+          <x-field type="text" name="password_confirmation" label="Password Confirmation"/>
       </div>
 
       <div>
