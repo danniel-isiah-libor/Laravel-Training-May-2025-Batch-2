@@ -9,7 +9,7 @@ class UserController extends Controller
     public function show($id = null)
     {
         // perform query.....
-         return "User ID: $id";
+        return "User ID: $id";
     }
 
     public function register(Request $request)
@@ -19,5 +19,13 @@ class UserController extends Controller
         // dd($request->date('birthdate'));
 
         return view('register');
+    }
+        public function login(Request $request)
+    {
+        // dump();
+        // dd($request->name);
+        // dd($request->date('birthdate'));
+
+        return view('login');
     }
 }
