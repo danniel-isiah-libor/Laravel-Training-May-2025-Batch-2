@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<div>
-    <!-- It is quality rather than quantity that matters. - Lucius Annaeus Seneca -->
-</div>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,4 +60,3 @@
     @endif --}}
 </body>
 </html>
->>>>>>> 47bd091b24c8d8100b726bdf373977f19bbb3d17
