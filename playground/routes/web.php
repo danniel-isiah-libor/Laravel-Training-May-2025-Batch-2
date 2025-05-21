@@ -32,6 +32,7 @@ Route::get('/users/show/{id?}', [UserController::class, 'show']);
 
 Route::get('/register', [UserController::class, 'register'])->name('register');
 Route::get('/login', [UserController::class, 'login'])->name('login');
+Route::get('/profile', [UserController::class, 'profile'])->name('profile');
 
 /**
  * PascalCase: Used for class names
