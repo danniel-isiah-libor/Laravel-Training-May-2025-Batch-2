@@ -17,7 +17,9 @@ class UserController extends Controller
     {
         // dump();
         // dd($request->name);
-        dd($request->date('birthdate'));
+        // dd($request->date('birthdate'));
+
+        return view('register');
     }
 =======
     //
